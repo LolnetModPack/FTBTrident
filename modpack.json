@@ -1,0 +1,14 @@
+{
+  "name": "FTBTrident Package", 
+  "title": "FTBTrident",
+  "gameVersion": "1.7.10",
+  "launch": {
+    "flags": []
+  },
+  "userFiles": {
+    "include": [
+      "servers.dat", 
+      "options.txt"
+    ]
+  }
+}

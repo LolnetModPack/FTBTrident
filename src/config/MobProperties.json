@@ -1,0 +1,64 @@
+{
+  "_comment": "Heyo m8s. Gideonseymour here. This is the default Mob Properties .json file. When the game starts, this file will distribute across all existing mobs without a file, giving them these properties. This file, as of right now, only makes it so that spawn outside of the default 1200x1200 area will deal double damage..",
+  "drops": [],
+ "stats": [
+ {
+      "_comment": "if this mob is farther away than 850 blocks from spawn...",
+      "function": "if_beyond_850",
+      "functions": [
+        {
+          "_comment": "...double the mob's attack",
+          "function": "modifier",
+          "attribute": "generic.attackDamage",
+          "value": 2,
+          "operator": 2
+        }
+]
+},
+ {
+      "_comment": "if this mob is farther away than 1000 blocks from spawn...",
+      "function": "if_beyond_1000",
+      "functions": [
+        {
+          "_comment": "...double the mob's attack",
+          "function": "modifier",
+          "attribute": "generic.attackDamage",
+          "value": 3,
+          "operator": 2
+        }
+]
+},
+ {
+      "_comment": "if this mob is farther away than 1200 blocks from spawn...",
+      "function": "if_beyond_1200",
+      "functions": [
+        {
+          "_comment": "...double the mob's attack",
+          "function": "modifier",
+          "attribute": "generic.attackDamage",
+          "value": 4,
+          "operator": 2
+        }
+]
+},
+    {
+      "_comment": "if this mob is in a desert...",
+      "function": "if_in_biome_2",
+      "functions": [
+        {
+          "_comment": "...double the mob's attack",
+          "function": "modifier",
+          "attribute": "generic.attackDamage",
+          "value": 2,
+          "operator": 2
+        },
+		{
+          "_comment": "...stop sunlight from killing",
+          "function": "potion",
+          "id": 12,
+          "ambient": true
+        }
+      ]
+    }
+  ]
+}

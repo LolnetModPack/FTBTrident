@@ -1,0 +1,12 @@
+{
+"minimumVersion": 1, 
+"packages": [
+{
+"name": "FTBTrident Package", 
+"title": "FTBTrident", 
+"version": "MODPACKVERSION", 
+"location": "https://www.lolnet.co.nz/modpack/FTBTrident.json", 
+"priority": 1
+}
+]
+}
